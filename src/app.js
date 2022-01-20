@@ -21,7 +21,7 @@ const upload = multer({ storage: storage });
 
 app.get('/', (req, res) => {
     res.render('index');
-});
+})
 
 app.post('/', upload.single('image'), function (req, res, next) {
     const quality = 50;
