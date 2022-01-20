@@ -1,0 +1,31 @@
+{
+  "name": "image-processor",
+  "version": "1.0.0",
+  "description": "Image processing using node.js",
+  "main": "src/app.js",
+  "scripts": {
+    "dev": "nodemon src/app.js",
+    "start": "node src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/champdecay/image-processor.git"
+  },
+  "keywords": [
+    "image",
+    "processing",
+    "node",
+    "nodejs"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/champdecay/image-processor/issues"
+  },
+  "homepage": "https://github.com/champdecay/image-processor#readme",
+  "dependencies": {
+    "express": "^4.17.2",
+    "multer": "^1.4.4",
+    "sharp": "^0.29.3"
+  }
+}
