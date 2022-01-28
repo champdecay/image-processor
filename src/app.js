@@ -28,7 +28,7 @@ app.post('/', upload.single('image'), function (req, res, next) {
     const dir = path.join(__dirname, '../uploads/');
     const image = sharp(`${dir + req.file.filename}`);
     image.metadata().then(function (metadata) {
-        return image.resize(Math.round(metadata.width / 2))
+        return image.resize(Math.round(metadata.width))
             .toFormat(req.body.format, { quality })
             .toFile(`${dir}/output.${req.body.format}`, (err, info) => {
                 fs.unlink(dir + req.file.filename, (err) => {
